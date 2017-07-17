@@ -10,18 +10,18 @@ echo "Let's begin."
 echo ""
 #Installing git and cloning files
 sudo apt-get install git
-git clone https://github.com/TechFX-IT/SiS-671-771_Linux $HOME/SiS\ drivers
+git clone https://github.com/TechFX-IT/SiS-671-771_Linux /home/SiS\ drivers
 #CD into the folder containing the files
-cd $HOME/SiS\ drivers
+cd /home/SiS\ drivers
 #Unpacking
-tar -xvzf $HOME/SiS\ drivers/sis64.tar.gz
+tar -xvzf /home/SiS\ drivers/sis64.tar.gz
 #Moving driver to the folder
-sudo mv -v $HOME/SiS\ drivers/sisimedia_drv.* /usr/lib/xorg/modules/drivers
+sudo mv -v /home/SiS\ drivers/sisimedia_drv.* /usr/lib/xorg/modules/drivers
 #Deleting dangerous files
 sudo rm -v /etc/X11/xorg.conf
 sudo rm -v ~/.config/monitors.xml
 #Moving xorg.conf
-sudo mv -v $HOME/SiS\ drivers/xorg.conf /etc/X11
+sudo mv -v /home/SiS\ drivers/xorg.conf /etc/X11
 #Reboot
 echo ""
 echo ""
